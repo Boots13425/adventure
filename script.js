@@ -8,7 +8,7 @@ const ENGLISH_AFFIRMATIONS = [
   "Your dedication to civil engineering will build bridges to an amazing future.",
   "Every challenge you face is shaping you into someone even more incredible.",
   "Your playful spirit brings joy and laughter to everyone lucky enough to know you.",
-  "At 18, you're already showing the world what grace and determination look like.",
+  "At 19, you're already showing the world what grace and determination look like.",
   "Your love for home shows how deeply you value comfort and connection.",
   "The faith you carry is a light that guides you through every storm.",
   "Your favorite things—chicken, plantain, that dream G-Wagon—they all tell your unique story.",
