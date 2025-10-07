@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A special place created with love for Nivanna">
+    <title>For Nivanna - A Gift of Love</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+     Password Gate 
+    <div id="password-gate" class="password-gate">
+        <div class="password-gate-content">
+            <div class="password-gate-card">
+                <div class="password-gate-header">
+                    <div class="heart-icon pulsing">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                    </div>
+                    <h1 class="password-gate-title">For Nivanna</h1>
+                    <p class="password-gate-subtitle">A special place, just for you. Enter the key to my heart.</p>
+                </div>
+
+                <form id="password-form" class="password-form">
+                    <div class="input-wrapper">
+                        <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                        <input type="password" id="password-input" placeholder="Enter password" autocomplete="off" required>
+                    </div>
+                    <p id="error-message" class="error-message" role="alert"></p>
+                    <button type="submit" class="unlock-button">Unlock</button>
+                </form>
+
+                <p class="password-hint">Hint: Three words, no spaces 💝</p>
+            </div>
+        </div>
+    </div>
+
+     Main Content (hidden initially) 
+    <main id="main-content" class="main-content hidden">
+         Floating Hearts Background 
+        <div id="floating-hearts" class="floating-hearts"></div>
+
+         Audio Player 
+        <div class="audio-player">
+            <button id="play-pause-btn" class="audio-btn primary" aria-label="Play music">
+                <svg id="play-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+                <svg id="pause-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                    <rect x="6" y="4" width="4" height="16"></rect>
+                    <rect x="14" y="4" width="4" height="16"></rect>
+                </svg>
+            </button>
+            <button id="mute-btn" class="audio-btn secondary" aria-label="Mute">
+                <svg id="volume-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                </svg>
+                <svg id="mute-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                    <line x1="23" y1="9" x2="17" y2="15"></line>
+                    <line x1="17" y1="9" x2="23" y2="15"></line>
+                </svg>
+            </button>
+            <audio id="background-audio" loop preload="none">
+                <source src="audiobackground-music.mp3" type="audio/mpeg">
+            </audio>
+            <p class="audio-label">Our Song</p>
+        </div>
+
+         Hero Section 
+        <section class="hero-section">
+            <div class="hero-background"></div>
+            <div class="hero-content">
+                <div class="hero-heart rotating">
+                    <svg width="96" height="96" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                </div>
+                <h1 class="hero-title">Welcome, Nivanna</h1>
+                <div class="hero-text">
+                    <p class="hero-description">
+                        This is a place created with love, just for you. Every word, every image, every moment here is a celebration of who you are and how much you mean to me.
+                    </p>
+                    <p class="hero-description-fr">
+                        Ceci est un endroit créé avec amour, rien que pour toi. Chaque mot, chaque image, chaque instant ici célèbre qui tu es et combien tu comptes pour moi.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+         Affirmations Section 
+        <section class="affirmations-section">
+            <div class="affirmations-background"></div>
+            <div class="affirmations-content">
+                <div class="section-header">
+                    <h2 class="section-title">Words for Your Heart</h2>
+                    <p class="section-subtitle">Affirmations that remind you how special you are</p>
+                </div>
+
+                <div class="affirmations-carousel">
+                    <button id="prev-affirmation" class="carousel-btn" aria-label="Previous affirmation">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+
+                    <div class="affirmation-display">
+                        <p id="current-affirmation" class="affirmation-text"></p>
+                    </div>
+
+                    <button id="next-affirmation" class="carousel-btn" aria-label="Next affirmation">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+
+                <div id="affirmation-dots" class="affirmation-dots"></div>
+            </div>
+        </section>
+
+         About Section 
+        <section class="about-section">
+            <div class="about-content">
+                <div class="section-header">
+                    <h2 class="section-title">About Nivanna</h2>
+                    <p class="section-subtitle">The amazing person you are</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <h3 class="about-card-title">Age</h3>
+                        <p class="about-card-text">18 years young</p>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="about-card-title">Studies</h3>
+                        <p class="about-card-text">Civil Engineering Student</p>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <h3 class="about-card-title">Dream Destination</h3>
+                        <p class="about-card-text">Japan</p>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                        </div>
+                        <h3 class="about-card-title">Personality</h3>
+                        <p class="about-card-text">Playful, loving, and full of life</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         Favorites Section 
+        <section class="favorites-section">
+            <div class="favorites-content">
+                <div class="section-header">
+                    <h2 class="section-title">Things You Love</h2>
+                    <p class="section-subtitle">What makes you smile</p>
+                </div>
+
+                <div class="favorites-grid">
+                    <div class="favorite-item">
+                        <span class="favorite-emoji">🍗</span>
+                        <h3 class="favorite-title">Favorite Food</h3>
+                        <p class="favorite-text">Chicken & Plantain</p>
+                    </div>
+
+                    <div class="favorite-item">
+                        <span class="favorite-emoji">🚙</span>
+                        <h3 class="favorite-title">Dream Car</h3>
+                        <p class="favorite-text">Mercedes G-Wagon</p>
+                    </div>
+
+                    <div class="favorite-item">
+                        <span class="favorite-emoji">🏠</span>
+                        <h3 class="favorite-title">Favorite Place</h3>
+                        <p class="favorite-text">Home sweet home</p>
+                    </div>
+
+                    <div class="favorite-item">
+                        <span class="favorite-emoji">✨</span>
+                        <h3 class="favorite-title">Special Trait</h3>
+                        <p class="favorite-text">You disturb (in the best way!)</p>
+                    </div>
+
+                    <div class="favorite-item">
+                        <span class="favorite-emoji">🙏</span>
+                        <h3 class="favorite-title">Faith</h3>
+                        <p class="favorite-text">Strong believer in God</p>
+                    </div>
+
+                    <div class="favorite-item">
+                        <span class="favorite-emoji">🌟</span>
+                        <h3 class="favorite-title">Passion</h3>
+                        <p class="favorite-text">Building the future</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         Gallery Section 
+         <section class="gallery-section">
+            <div class="gallery-content">
+                <div class="section-header">
+                    <h2 class="section-title">Our Memories</h2>
+                    <p class="section-subtitle">Captured moments of love and joy is coming soon </p>
+                </div>
+
+                <!-- <div id="gallery-grid" class="gallery-grid"></div> -->
+            </div>
+        </section> 
+
+         Gallery Lightbox 
+        <!-- <div id="lightbox" class="lightbox hidden">
+            <button id="close-lightbox" class="lightbox-close" aria-label="Close lightbox">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+
+            <button id="prev-image" class="lightbox-nav prev" aria-label="Previous image">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+
+            <button id="next-image" class="lightbox-nav next" aria-label="Next image">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+
+            <div class="lightbox-content">
+                <img id="lightbox-image" src="paper2.jpg" alt="">
+                <div class="lightbox-captions">
+                    <p id="lightbox-caption-en" class="lightbox-caption-en"></p>
+                    <p id="lightbox-caption-fr" class="lightbox-caption-fr"></p>
+                </div>
+
+                <div class="lightbox-mobile-nav">
+                    <button id="prev-image-mobile" class="lightbox-mobile-btn" aria-label="Previous image">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <button id="next-image-mobile" class="lightbox-mobile-btn" aria-label="Next image">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div> -->
+
+         Messages Section 
+        <section class="messages-section">
+            <div class="messages-content">
+                <div class="section-header">
+                    <h2 class="section-title">Messages from the Heart</h2>
+                    <p class="section-subtitle">Words I want you to always remember</p>
+                </div>
+
+                <div class="messages-grid">
+                    <div class="message-card">
+                        <div class="message-icon">💝</div>
+                        <p class="message-text">
+                            You are the most incredible person I know. Your strength, your kindness, your passion for life—everything about you inspires me every single day.
+                        </p>
+                    </div>
+
+                    <div class="message-card">
+                        <div class="message-icon">🌟</div>
+                        <p class="message-text">
+                            Never forget how special you are. The world is better because you're in it, and I'm so grateful to know you and love you.
+                        </p>
+                    </div>
+
+                    <div class="message-card">
+                        <div class="message-icon">✨</div>
+                        <p class="message-text">
+                            Your dreams of Japan, your G-Wagon, your engineering career—they're all going to come true. I believe in you with all my heart.
+                        </p>
+                    </div>
+
+                    <div class="message-card">
+                        <div class="message-icon">💖</div>
+                        <p class="message-text">
+                            Keep being you—playful, loving, passionate, and full of life. The way you "disturb" makes every moment an adventure, and I wouldn't change a thing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         Closing Section 
+        <section class="closing-section">
+            <div class="closing-content">
+                <div class="closing-heart pulsing">
+                    <svg width="80" height="80" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                </div>
+                <h2 class="closing-title">Forever and Always</h2>
+                <p class="closing-text">
+                    This website is just a small token of how much you mean to me. You are loved, cherished, and celebrated every single day.
+                </p>
+                <p class="closing-text-fr">
+                    Ce site n'est qu'un petit témoignage de ce que tu représentes pour moi. Tu es aimée, chérie et célébrée chaque jour.
+                </p>
+                <p class="closing-signature">With all my love 💕</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
